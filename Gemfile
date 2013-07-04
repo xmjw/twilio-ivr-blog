@@ -1,0 +1,8 @@
+source 'http://rubygems.org'
+gem 'sinatra'
+gem 'thin'
+gem 'twilio-ruby'
+gem 'pg'
+gem 'data_mapper'
+gem 'dm-postgres-adapter'
+gem 'dm-timestamps'
