@@ -21,7 +21,7 @@ class Step
     # Create the first varaint of steps...
     topStep = Step.create(say: "Thank you for calling Twilio Owl Sanctuary.", sequence: 0, gather: nil, root: true)
     owl_count = Step.create(say: "Thank you. We have 3 Owls. Three.", sequence: 0, gather: nil, goal: true)
-    operator = Step.create(say: "This is a demo, we don’t really have an operator.",  sequence: 0, gather: nil, goal: true)    
+    operator = Step.create(say: "This is a demo, we don't really have an operator.",  sequence: 0, gather: nil, goal: true)    
     Step.create(say: "To hear how many Owls we have, press 1.", parent: topStep, sequence: 0, gather: "1", action: owl_count)
     Step.create(say: "To speak to an operator, press 2.", parent: topStep, sequence: 1, gather: "2", action: operator,)
 
